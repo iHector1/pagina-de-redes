@@ -1,7 +1,13 @@
 import Head from 'next/head'
 import { Box, Container } from '@chakra-ui/react'
 import Navbar from '../navbar'
-
+import ComputerLoader from '../computer-loader'
+import dynamic from 'next/dynamic'
+const Computer = dynamic(() => import('../computer'), {
+    ssr: false,
+    loading: () => <ComputerLoader />
+  })
+  
 const Main = ({ children, router }) => {
     return (
         <Box as='main' pb={8}>
@@ -11,6 +17,7 @@ const Main = ({ children, router }) => {
             </Head>
             <Navbar path={router.asPath}/>
             <Container maxW="container.md" pt={14}>
+                <Computer/>
                 {children}
             </Container>
         </Box>

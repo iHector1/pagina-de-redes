@@ -1,8 +1,8 @@
 {
   "name": "hector-gonzalez",
-  "author":"Hector Gonzalez",
+  "author": "Hector Josue Gonzalez Cortes",
   "version": "1.0.0",
-  "description": "Takuya's website",
+  "description": "Hector Josue Gonzalez Cortes",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
@@ -11,7 +11,6 @@
     "lint": "next lint"
   },
   "keywords": [],
-  "author": "Takuya Matsuyama",
   "license": "MIT",
   "dependencies": {
     "@chakra-ui/icons": "^1.0.15",
@@ -22,7 +21,8 @@
     "next": "^11.1.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-icons": "^4.3.1"
+    "react-icons": "^4.3.1",
+    "three": "^0.138.3"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
