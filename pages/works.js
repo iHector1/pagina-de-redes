@@ -1,26 +1,52 @@
-import {Heading, SimpleGrid,Container } from '@chakra-ui/react'
+import { Heading, SimpleGrid, Container, Divider } from '@chakra-ui/react'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
-import thumbYummy from '../public/images/img_yummy.png'
-import thumbRick from '../public/images/img_rick.png'
+
+import thumbNetwork from '../public/images/networkLink.png'
+import thumbTree from '../public/images/spaning-tree.jpg'
+import ThumbTreeConf from '../public/images/spannig_tree_conf.png'
+import Layout from '../components/layouts/article'
 const Works = () => {
     return (
-        <Container >
-            <Heading as="h3" fontSize={20} mb={6} variant="section-title">Works
-            </Heading>
-            <SimpleGrid columns={[1, 1, 2]} gap={6}>
-                <Section> 
-                    <WorkGridItem id="yummy" title="Yummy" thumbnail={thumbYummy}>
-                        A social media about kitchen recipies. 
-                    </WorkGridItem>
+        <Layout title="Works">
+            <Container >
+                <Heading as="h3" fontSize={20} mb={6} variant="section-title">Network Scaling
+                </Heading>
+                <SimpleGrid columns={1} gap={6}>
+                    <Section>
+                        <WorkGridItem id="network" title="Network desing" thumbnail={thumbNetwork}>
+                            Work about Network desing
+                        </WorkGridItem>
+                    </Section>
+                </SimpleGrid>
+                <Section delay={0.2}>
+                    <Divider my={6} />
+                    <Heading as="h3" fontSize={20} mb={4}>
+                        LAN recurrency
+                    </Heading>
                 </Section>
-                <Section> 
-                    <WorkGridItem id="rick" title="Ricardo y Martin APP" thumbnail={thumbRick}>
-                        Rick and Morty&apos;s api client, it show all characters of the serie and it&apos;s characteristics and it&apos;s PWA application
-                    </WorkGridItem>
-                </Section>
-            </SimpleGrid>
-        </Container>
+                <SimpleGrid columns={[1, 2, 2]} gap={6}>
+                    <Section delay={0.3}>
+                        <WorkGridItem
+                            id="spanningtree"
+                            thumbnail={thumbTree}
+                            title="Spanning Tree Concepts"
+                        >
+                            Works about Spanning Tree Concepts
+                        </WorkGridItem>
+                    </Section>
+                    <Section delay={0.3}>
+                        <WorkGridItem
+                            id="spanningtreeconfiguration"
+                            thumbnail={ThumbTreeConf}
+                            title="Spanning Tree Configurations"
+                        >
+                            Works about Spanning Tree Configurations
+                        </WorkGridItem>
+                    </Section>
+                </SimpleGrid>
+            </Container>
+        </Layout>
     )
 }
 export default Works;

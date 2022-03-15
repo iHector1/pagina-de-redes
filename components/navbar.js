@@ -63,20 +63,9 @@ const Navbar = props => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="/works" path={path}>
-            Works
+            Networks
           </LinkItem>
-          <LinkItem
-            _target="_blank"
-            href="https://github.com/iHector1/my-page.git"
-            path={path}
-            display="inline-flex"
-            alignItems="center"
-            style={{ gap: 4 }}
-            pl={2}
-          >
-            <IoLogoGithub />
-            Source
-          </LinkItem>
+        
         </Stack>
 
         <Box flex={1} align="right">
@@ -94,11 +83,9 @@ const Navbar = props => {
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
                 <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
+                  <MenuItem as={Link}>Networkfff</MenuItem>
                   </NextLink>
-                  <NextLink href="https://github.com/iHector1/my-page.git" passHref>
-                  <MenuItem as={Link}>Source</MenuItem>
-                </NextLink>
+
               </MenuList>
             </Menu>
           </Box>
